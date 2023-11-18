@@ -42,7 +42,11 @@ public class Player : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward; //Moves with camera angle
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            // controller.Move(moveDir.normalized * speed * Time.deltaTime);
+
+            Vector3 pos = this.transform.position;
+            pos += (moveDir.normalized * speed * Time.deltaTime);
+            this.transform.position = pos;
         }
     }
 }
