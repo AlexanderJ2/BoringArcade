@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
         //Using unity's old controller system
         float horizontal = Input.GetAxisRaw("Horizontal");
         float Vertical = Input.GetAxisRaw("Vertical");
+        Animation.Play("walk");
 
         Vector3 direction = new Vector3(horizontal, 0f, Vertical); //Uppdates position(Moves player)
     
