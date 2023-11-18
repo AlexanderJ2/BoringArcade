@@ -165,15 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399370922804565329, guid: db4f516ac4fecb7428438905dc92043d, type: 3}
       propertyPath: m_text
-      value: Defeat
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399370922804565329, guid: db4f516ac4fecb7428438905dc92043d, type: 3}
-      propertyPath: m_fontSize
-      value: 44.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399370922804565329, guid: db4f516ac4fecb7428438905dc92043d, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 1
+      value: Victory
       objectReference: {fileID: 0}
     - target: {fileID: 4992481773934654941, guid: db4f516ac4fecb7428438905dc92043d, type: 3}
       propertyPath: m_Color.b
