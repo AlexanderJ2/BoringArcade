@@ -6,20 +6,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Money
-    public int money = 0;
-
     //Movement
     public CharacterController controller;
     public Transform cam;
     [SerializeField] float speed = 6f;
     float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+    Animation anim;
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        anim = gameObject.GetComponent<Animation>();
+        anim.Play("walk");
     }
     
     void FixedUpdate()
@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         //Using unity's old controller system
         float horizontal = Input.GetAxisRaw("Horizontal");
         float Vertical = Input.GetAxisRaw("Vertical");
-        Animation.Play("walk");
+        
 
         Vector3 direction = new Vector3(horizontal, 0f, Vertical); //Uppdates position(Moves player)
     
