@@ -6,7 +6,7 @@ public class Car : MonoBehaviour
 {
 
     //Car settings
-    public float speed = -2f;
+    public float speed = 5f;
     Player _player;
 
     // Start is called before the first frame update
@@ -24,9 +24,6 @@ public class Car : MonoBehaviour
     void OnCollisionEnter(Collision collision){
         if (collision.collider.CompareTag("CarDestroyer")){
             Destroy(gameObject);
-        }
-         if (collision.collider.CompareTag("Income")){
-
         }
     }
 
